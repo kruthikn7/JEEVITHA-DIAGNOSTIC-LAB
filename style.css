@@ -1,0 +1,46 @@
+
+body{
+    align-items: center;
+   padding: 200px 570px ;
+}
+
+#login {
+    background-color: rgb(236, 117, 117);
+    align-items: center;
+    padding-left: 0px;
+    border-radius: 50px;
+    border: 3px black solid;
+    justify-items: center;
+}
+
+#submit{
+
+    border-radius: 20px;
+    border: 2px solid black ;
+    padding: 5px 8px;
+}
+
+#reset{
+
+    border-radius: 20px;
+    border: 2px solid black ;
+    padding: 5px 10px;
+}
+
+#box{
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    padding-left: 70px;
+    padding-bottom: 20px;
+}
+#id{
+    align-content: center;
+    padding-top: 40px;
+    padding-left: 70px;
+
+}
+
+#word{
+    padding: 0px 5px 10px 0px ;
+}
