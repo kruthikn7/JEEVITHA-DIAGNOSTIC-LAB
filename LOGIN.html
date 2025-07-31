@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Login / Sigh Up</title>
 </head>
 <body>
     <div id="login">
@@ -23,9 +23,15 @@
         </div>
         EMAIL : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <input type="Email" id="email" placeholder="Enter Your Email" required><br>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+          <label style="display: flex; align-items: center; font-size: 0.98em; color: var(--text);">
+            <input type="checkbox" id="remember" style="margin-right: 6px;"> Remember Me
+          </label>
+          <a href="#" style="color: var(--primary); text-decoration: none; font-size: 0.98em;">Forgot Password?</a>
+        </div>
         <div id="box">
-        <input type="submit" id="submit"> &nbsp;&nbsp; 
-        <input type="reset" id="reset">
+          <input type="submit" id="submit"> &nbsp;&nbsp; 
+          <input type="reset" id="reset">
         </div>
     </form>
     </div>

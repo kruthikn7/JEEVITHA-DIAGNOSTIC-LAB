@@ -1,0 +1,80 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #1976D2; 
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo-icon {
+  width: 180px;
+  height:90px;
+  margin-right: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #FFC107;
+}
+
+.nav-links a.active::after,
+.nav-links a:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #1976D2;
+  bottom: 0;
+  left: 0;
+}
+
+.login-button {
+  padding: 8px 20px;
+  border: 1px solid #1976D2;
+  border-radius: 24px;
+  color: #1976D2;
+  background-color: transparent;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #FFC107 ;
+  color: white;
+}
+
