@@ -1,4 +1,4 @@
-/* Reset some defaults */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +7,27 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./images/Picsart_22-09-13_12-15-56-598.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 70%;
+  opacity: 0.5;
+  z-index: -1;
+  pointer-events: none;
 }
 
 header {
@@ -16,6 +37,16 @@ header {
   padding: 20px 30px;
   background-color: white;
   border-bottom: 1px solid #eee;
+}
+
+#home-image {
+  position: relative;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 550px;
+  height: auto;
 }
 
 .logo {

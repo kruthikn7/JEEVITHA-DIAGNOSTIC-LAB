@@ -1,12 +1,16 @@
+
 /* Color Palette */
 :root {
   --primary: #1976D2;
   --secondary: #43A047;
   --accent: #FFC107;
-  --background: #F5F7FA;
+  --background: #ffffff;
   --text: #222831;
 }
-
+.home-btn:hover {
+  background-color: var(--accent);
+  color: var(--primary);
+}
 body {
   background: var(--background);
   color: var(--text);
@@ -18,10 +22,21 @@ body {
   justify-content: center;
 }
 
+#email{
+  color: var(--secondary);
+  font-weight: 500;
+  
+}
+
+input[type="home"]:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
 #login {
-  background: #fff;
+  background: #f4f3f3;
   border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.10);
+  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.064);
   padding: 40px 32px 32px 32px;
   max-width: 350px;
   width: 100%;
@@ -91,7 +106,7 @@ input[type="reset"] {
 
 input[type="submit"]:hover {
   background: var(--accent);
-  color: var(--primary);
+  color: white;
 }
 
 input[type="reset"]:hover {
